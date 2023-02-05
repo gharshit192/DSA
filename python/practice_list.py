@@ -1,4 +1,7 @@
-# List Is ordered, changebale, contains duplicate
+# List.py Is ordered, changebale, contains duplicate
+from collections import deque
+from copy import deepcopy
+
 myList = ["abc", "def", "ghi", "jkl,'mno"]
 
 # myList.sort()
@@ -55,8 +58,35 @@ myList.reverse()
 print(myList)
 
 # list concatination
-list1 = [2, 4, 5]
+list1 = [2, [4,8], 5]
 list2 = [2, 4, 6]
 list3 = list1 + list2
 print(list3)
+
+list4 = deepcopy(list1)
+list1.pop()
+print(list1)
+
+any = deque([1,2,3,4])
+print(any)
+
+any.pop()
+any.popleft()
+any.appendleft(6)
+print(any)
+print()
+print()
+print()
+
+l1 = [2,4,5]
+l2 = [2,4,5]
+
+print(l1 == l2)
+
+s1 = "harshit"
+s2 = "harshit"
+
+print(s1 ==s2)
+
+print(s1 is s2)
 
