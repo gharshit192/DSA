@@ -14,8 +14,8 @@ lst = [
 # main(lst)
 
 '''
-# RULE - 1  --> As time complexity for above program is O(n) or we have calculated O(2n) but as 2 is constant, so we ignore it
-# RULE - 1  --> Drop the non-dominant term ie. f(n) -> n^2 + 2n + 7 -> so complexity for this is O(n^2)
+# RULE - 1  --> As time b-complexity for above program is O(n) or we have calculated O(2n) but as 2 is constant, so we ignore it
+# RULE - 1  --> Drop the non-dominant term ie. f(n) -> n^2 + 2n + 7 -> so b-complexity for this is O(n^2)
 '''
 
 
@@ -62,3 +62,16 @@ def main5(n):
 
 for n in [486]:
     print(main5(n))
+
+
+# Average Case Complexity is O(1) ib dictionary for searching or add, delete
+def main6():
+    batch = {
+        "name" : "Harshit",
+        "course" : "dsa"
+    }
+    batch.get("course")
+    batch["course"] = "Dsa_SystemDesign"
+    print(batch)
+
+main6()

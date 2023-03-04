@@ -35,7 +35,7 @@ for list in [
     main(list)
     print()
 
-# For Infinite Loop   -> The complexity is undetermined
+# For Infinite Loop   -> The b-complexity is undetermined
 # i = 10
 # while(i > 0):
 #     print(i)
